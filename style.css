@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+:root{
+    --font-pri: 'Montserrat', sans-serif;
+}
+
+p, h3, .count, .term{
+    text-align: center;
+    font-family: var(--font-pri);
+    font-weight: 600;
+    color:#BDBDBD;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    font-size: clamp(0.875rem, 0.6549rem + 0.939vw, 1.5rem);
+    color: #4E5150;
+    margin-top: .7rem;
+}
+
+.city{
+    font-size: clamp(0.625rem, 0.537rem + 0.3756vw, 0.875rem);
+    margin: .5rem auto .7rem auto;
+}
+
+.count{
+    font-size: clamp(0.75rem, 0.618rem + 0.5634vw, 1.125rem);
+    color: #4E5150;
+}
+
+.term{
+    font-size: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+}
+
+.profile img{
+    max-width: 156px;
+}
+
+.profile-stats div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E5E5E5;
+    width: 100px;
+    height: 67px;
+    border-radius: 12px;
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: .5rem;
+}
+
+.gallery-container{
+    max-width: min(93vw,900px);
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.6vw;
+}
+
+.gallery-item-2{
+    grid-column: 2 / 4
+}
+.gallery-item-3{
+    grid-column: span 2;
+}
+.gallery-item-4{
+    grid-row: span 4;
+}
+
+img{
+    border-radius: 12px;
+}
+
+footer {
+    margin: 7rem auto 1rem auto;
+}
+footer p{
+    text-align: center;
+    color: #4f4f4f;
+    font-family: var(--ff-primery);
+    font-weight: 500;
+}
+footer a{
+    text-decoration: none;
+    color: #4f4f4f;
+    font-weight: 700;
+}
+
+@media screen and (max-width:768px){
+    .profile img{
+        max-width: 100px;
+    }
+    .profile-stats div{
+        height: 52px;
+        width: 78px;
+    }
+    .profile-stats{
+        gap: 12px;
+    }
+}
